@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Grade Management System</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Grade Management System</h1>
+
+        <div class="form-container">
+            <input type="text" id="studentName" placeholder="Enter Student Name">
+
+            <h2>Prelim</h2>
+            <input type="number" id="prelimQAR" placeholder="QAR Score">
+            <input type="number" id="prelimExam" placeholder="Exam Score">
+
+            <h2>Midterm</h2>
+            <input type="number" id="midtermQAR" placeholder="QAR Score">
+            <input type="number" id="midtermExam" placeholder="Exam Score">
+
+            <h2>Final</h2>
+            <input type="number" id="finalQAR" placeholder="QAR Score">
+            <input type="number" id="finalExam" placeholder="Exam Score">
+
+            <button onclick="computeGrades()">Compute Grades</button>
+        </div>
+
+        <div class="report-container">
+            <h2>Student Report</h2>
+
+            <p><strong>Name:</strong> <span id="reportName">---</span></p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Term</th>
+                        <th>QAR</th>
+                        <th>Exam</th>
+                        <th>Grade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Prelim</td>
+                        <td id="rPrelimQAR">-</td>
+                        <td id="rPrelimExam">-</td>
+                        <td id="rPrelimGrade">-</td>
+                    </tr>
+
+                    <tr>
+                        <td>Midterm</td>
+                        <td id="rMidtermQAR">-</td>
+                        <td id="rMidtermExam">-</td>
+                        <td id="rMidtermGrade">-</td>
+                    </tr>
+
+                    <tr>
+                        <td>Final</td>
+                        <td id="rFinalQAR">-</td>
+                        <td id="rFinalExam">-</td>
+                        <td id="rFinalGrade">-</td>
+                    </tr>
+                </tbody>
+            </table>
+
+       
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
